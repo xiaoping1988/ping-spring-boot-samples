@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>ping-spring-boot-sample-mybatis</artifactId>
+    <groupId>com.ping.springboot</groupId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <ping.springboot.version>1.0-SNAPSHOT</ping.springboot.version>
+    </properties>
+
+    <parent>
+        <groupId>com.ping.springboot</groupId>
+        <artifactId>ping-spring-boot-dependencies</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ping.springboot</groupId>
+            <artifactId>mybatis-ping-spring-boot-starter</artifactId>
+            <version>${ping.springboot.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>2.6.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ping.springboot</groupId>
+            <artifactId>swagger-ping-spring-boot-starter</artifactId>
+            <version>${ping.springboot.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
